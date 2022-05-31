@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/OR13/undocumented-credential-claims#readme",
   "dependencies": {
-    "jest": "^28.1.0"
+    "axios": "^0.27.2",
+    "jest": "^28.1.0",
+    "js-yaml": "^4.1.0",
+    "jsonld": "3.2.0"
   }
 }

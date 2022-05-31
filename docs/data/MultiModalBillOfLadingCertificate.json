@@ -1,0 +1,182 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/traceability/v1"
+  ],
+  "id": "did:key:z6MkmbqKc6KncFZUbVJwUppttTkiMAtnVJ5wzC5oVBWci3pc",
+  "type": [
+    "VerifiableCredential",
+    "MultiModalBillOfLadingCertificate"
+  ],
+  "name": "Multi-Modal Bill Of Lading",
+  "issuanceDate": "2022-03-04T13:40:00Z",
+  "issuer": {
+    "type": "Entity",
+    "id": "did:key:z6MktHQo3fRRohk44dsbE76CuiTpBmyMWq2VVjvV6aBSeE3U",
+    "name": "MULTI CONTAINER LINE",
+    "address": {
+      "type": "PostalAddress",
+      "organizationName": "MCL Multi Container Line LTD.",
+      "streetAddress": "Rm. 3501, 35/F Manhatten Place, 23 Wang Tai Road",
+      "addressLocality": "Kowloon Bay",
+      "addressRegion": "Hong Kong",
+      "addressCountry": "Hong Kong SAR"
+    },
+    "entityType": "Organization"
+  },
+  "credentialSubject": {
+    "type": "MultiModalBillOfLading",
+    "billOfLadingNumber": "EX600822199A",
+    "bookingNumber": [
+      "EX600822199"
+    ],
+    "shipper": {
+      "type": "Entity",
+      "name": "Espresso Italiano Co.",
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "Via Vico Ferrovia 5",
+        "addressLocality": "Goro",
+        "addressRegion": "Ferrara",
+        "postalCode": "44020",
+        "addressCountry": "IT"
+      },
+      "email": "sales@espresso-italiano.example.com",
+      "phoneNumber": "+39 0351 9067195",
+      "entityType": "Organization"
+    },
+    "consignee": {
+      "type": "Entity",
+      "name": "Prosumer Coffee Supplies, Ltd.",
+      "description": "Coffee Machine Imports",
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "3934 Spinnaker Lane",
+        "addressLocality": "Joliet",
+        "addressRegion": "Illinois",
+        "postalCode": "60432",
+        "addressCountry": "US"
+      },
+      "entityType": "Organization"
+    },
+    "notifyParty": [
+      {
+        "type": "Entity",
+        "name": "Prosumer Coffee Supplies, Ltd.",
+        "description": "Coffee Machine Imports",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "3934 Spinnaker Lane",
+          "addressLocality": "Joliet",
+          "addressRegion": "Illinois",
+          "postalCode": "60432",
+          "addressCountry": "US"
+        },
+        "entityType": "Organization"
+      }
+    ],
+    "carrier": {
+      "type": "Entity",
+      "id": "did:key:z6Mku6sNEit2qhNyaKDoj6ozURx5ApD85Za5g6dmnpYi6Auv",
+      "name": "MULTI CONTAINER LINE",
+      "address": {
+        "type": "PostalAddress",
+        "organizationName": "MCL Multi Container Line LTD.",
+        "streetAddress": "Rm. 3501, 35/F Manhatten Place, 23 Wang Tai Road",
+        "addressLocality": "Kowloon Bay",
+        "addressRegion": "Hong Kong",
+        "addressCountry": "Hong Kong SAR"
+      },
+      "entityType": "Organization"
+    },
+    "mainCarriageTransportMovement": {
+      "type": "Transport",
+      "vesselNumber": "MS Seven Seas",
+      "voyageNumber": "Atl-W0425"
+    },
+    "portOfLoading": {
+      "type": "Place",
+      "unLocode": "ITMIL"
+    },
+    "portOfDischarge": {
+      "type": "Place",
+      "unLocode": "USLGB"
+    },
+    "totalNumberOfPackages": 2200,
+    "transportEquipmentQuantity": 2,
+    "utilizedTransportEquipment": [
+      {
+        "type": "TransportEquipment",
+        "equipmentReference": "APZU4812090",
+        "ISOEquipmentCode": "40GP",
+        "seals": [
+          {
+            "type": "Seal",
+            "sealNumber": "PTW-002290109692"
+          }
+        ]
+      },
+      {
+        "type": "TransportEquipment",
+        "equipmentReference": "APZU5985096",
+        "ISOEquipmentCode": "40GP",
+        "seals": [
+          {
+            "type": "Seal",
+            "sealNumber": "PTW-002255398220"
+          }
+        ]
+      }
+    ],
+    "includedConsignmentItems": [
+      {
+        "marksAndNumbers": "Espresso Italiano",
+        "commodity": {
+          "type": "Commodity",
+          "commodityCode": "851671",
+          "commodityCodeType": "HS"
+        },
+        "packageQuantity": 2200,
+        "netWeight": {
+          "type": "QuantitativeValue",
+          "unitCode": "kg",
+          "value": "14600"
+        },
+        "grossWeight": {
+          "type": "QuantitativeValue",
+          "unitCode": "kg",
+          "value": "15960"
+        },
+        "grossVolume": {
+          "type": "QuantitativeValue",
+          "value": "856",
+          "unitCode": "cmb"
+        }
+      }
+    ],
+    "freightAndCharges": {
+      "type": "ServiceCharge",
+      "chargeCode": "basicFreight",
+      "paymentTerm": "collect",
+      "chargeText": "Negotiated ocean freight",
+      "rate": {
+        "type": "PriceSpecification",
+        "price": 2250,
+        "priceCurrency": "USD"
+      },
+      "calculationBasis": "Per container",
+      "appliedAmount": {
+        "type": "PriceSpecification",
+        "price": 4500,
+        "priceCurrency": "USD"
+      }
+    },
+    "declaredValue": {
+      "type": "PriceSpecification",
+      "price": 240000,
+      "priceCurrency": "USD"
+    },
+    "shippedOnBoardDate": "2022-02-02T09:30:00Z",
+    "termsAndConditions": "https://terms-of-shipment.carrier.example.com"
+  }
+}

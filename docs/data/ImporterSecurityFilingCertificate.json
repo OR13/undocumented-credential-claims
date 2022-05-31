@@ -1,0 +1,140 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/traceability/v1"
+  ],
+  "id": "did:key:z6MkpnRaj2ajC29t2ejMS4tTtF6BZm76NRLDowLGm3ywPNHn",
+  "type": [
+    "VerifiableCredential",
+    "ImporterSecurityFilingCertificate"
+  ],
+  "name": "Importer Security Filing Certificate",
+  "issuanceDate": "2022-02-24T12:10:00Z",
+  "issuer": {
+    "id": "did:key:z6MktHQo3fRRohk44dsbE76CuiTpBmyMWq2VVjvV6aBSeE3U",
+    "type": "Organization",
+    "name": "Onwards A/S",
+    "address": {
+      "type": "PostalAddress",
+      "streetAddress": "Sludevej 63",
+      "addressLocality": "Kgs. Lyngby",
+      "postalCode": "2800",
+      "addressCountry": "DK"
+    }
+  },
+  "credentialSubject": {
+    "type": "ImporterSecurityFiling",
+    "seller": {
+      "type": "Entity",
+      "name": "Onwards A/S",
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "Sludevej 63",
+        "addressLocality": "Kgs. Lyngby",
+        "postalCode": "2800",
+        "addressCountry": "DK"
+      },
+      "entityType": "Organization"
+    },
+    "buyer": {
+      "type": "Entity",
+      "name": "Future Mobility, Inc.",
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "2016 W Farmington Rd",
+        "addressLocality": "West Peoria",
+        "postalCode": "61604",
+        "addressCountry": "US"
+      },
+      "entityType": "Organization"
+    },
+    "importer": {
+      "type": "Entity",
+      "name": "Onwards A/S",
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "Sludevej 63",
+        "addressLocality": "Kgs. Lyngby",
+        "postalCode": "2800",
+        "addressCountry": "DK"
+      },
+      "entityType": "Organization"
+    },
+    "consignee": {
+      "type": "Entity",
+      "name": "Future Mobility, Inc.",
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "2016 W Farmington Rd",
+        "addressLocality": "West Peoria",
+        "postalCode": "61604",
+        "addressCountry": "US"
+      },
+      "entityType": "Organization"
+    },
+    "shipToParty": {
+      "type": "Entity",
+      "name": "Future Mobility - Georgia",
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "3837 Martinez Blvd",
+        "addressLocality": "Augusta",
+        "addressRegion": "Georgia",
+        "postalCode": "30907",
+        "addressCountry": "US"
+      },
+      "entityType": "Organization"
+    },
+    "filingItems": [
+      {
+        "type": "ConsignmentItem",
+        "commodity": {
+          "type": "Commodity",
+          "commodityCode": "9403 7000 00",
+          "commodityCodeType": "HTS"
+        },
+        "countryOfOrigin": "CN",
+        "manufacturer": {
+          "type": "Organization",
+          "name": "Xxinau Manufacturing Co. Ltd.",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "Xin Fei Da Dao 139",
+            "addressLocality": "Xindao",
+            "addressRegion": "Fujian Province",
+            "postalCode": "361100",
+            "addressCountry": "CN"
+          }
+        }
+      }
+    ],
+    "containerStuffingLocation": [
+      {
+        "type": "Place",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "Xin Fei Da Dao 139",
+          "addressLocality": "Xindao",
+          "addressRegion": "Fujian Province",
+          "postalCode": "361100",
+          "addressCountry": "CN"
+        }
+      }
+    ],
+    "consolidator": [
+      {
+        "type": "Entity",
+        "name": "Xxinau Manufacturing Co. Ltd.",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "Xin Fei Da Dao 139",
+          "addressLocality": "Xindao",
+          "addressRegion": "Fujian Province",
+          "postalCode": "361100",
+          "addressCountry": "CN"
+        },
+        "entityType": "Organization"
+      }
+    ]
+  }
+}
